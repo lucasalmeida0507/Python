@@ -1,0 +1,21 @@
+#Classificação de notas de aproveitamento
+
+nota = int(input("Olá, insira a nota de aproveitamento deste aluno: "))
+
+
+
+if nota >= 90 and nota <= 100:
+
+    print("Parabéns! Seu aproveitamento foi excelente!")
+
+elif nota >= 70 and nota <= 89:
+    
+    print("Parabéns! Seu aproveitamento foi bom!")
+
+elif nota >= 50 and nota <= 69:
+    
+    print("Parabéns! Seu aproveitamento foi satisfatório!")
+
+else:
+    
+    print("Seu aproveitamento foi insuficiente!")
