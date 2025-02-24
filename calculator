@@ -1,0 +1,14 @@
+#Calculadora
+
+digitado = int(input ("A tabuada de qual número você deseja ver? "))
+
+print(digitado, "* 1 =", digitado * 1 )
+print(digitado, "* 2 =", digitado * 2 )
+print(digitado, "* 3 =", digitado * 3 )
+print(digitado, "* 4 =", digitado * 4 )
+print(digitado, "* 5 =", digitado * 5 )
+print(digitado, "* 6 =", digitado * 6 )
+print(digitado, "* 7 =", digitado * 7 )
+print(digitado, "* 8 =", digitado * 8 )
+print(digitado, "* 9 =", digitado * 9 )
+print(digitado, "* 10 =", digitado * 10 )
