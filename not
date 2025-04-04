@@ -1,0 +1,723 @@
+#Python função if ou seja função Se
+
+numero1 = 90
+numero2 = 12
+
+# Se a varriável 1 é maior que a 2
+if numero1 > numero2:
+
+    print("O número 1 é maior que o número 2")
+
+"""
+O número 1 é maior que o número 2
+"""
+
+#Python função If... elif
+if
+
+numero1 = 2
+numero2 = 2
+
+if numero1 > numero2:
+    print("O numero da variável numero1 é maior que o numero da variavel2")
+
+elif numero1 == numero2:
+    print("O numero da variavel numero1 é igual ao numero2")
+
+"""
+O numero da variavel numero1 é igual ao numero2
+"""
+
+#advinhe o número secreto
+
+numero_secreto = 7
+
+chute = int(input("Tente adivinhar o número secreto entre 1 e 10: "))
+
+if chute == numero_secreto:
+
+    print ("Parabéns! Você adivinhou o número secreto!")
+
+else: 
+
+    print ("Desculpe, você não adivinhou o número secreto!")
+
+"""
+Tente adivinhar o número secreto entre 1 e 10:  7
+Parabéns! Você adivinhou o número secreto!
+"""
+
+idade = 18
+
+idade_votar = int(input("Insira sua idade para sabermos se voce esta apto para votar:" ))
+
+if idade_votar >= idade:
+
+    print("Sim, voce esta apto para votar, vote com consciencia")
+
+else:
+
+    print("Lamento, mas a votação é para 18+")
+    
+
+"""
+Insira sua idade para sabermos se voce esta apto para votar: 18
+Sim, voce esta apto para votar, vote com consciencia
+"""
+
+# função If... elif... else
+
+numero1 = 2
+numero2 = 6
+
+if numero1 > numero2:
+
+    print(f"O {numero1} é maior que o {numero2}")
+
+elif numero1 == numero2:
+
+    print(f"O {numero1} é igual ao {numero2}")
+
+else:
+
+    print(f"O {numero1} é menor que o {numero2}")
+
+"""
+O 2 é menor que o 6
+"""
+
+numero1 = 50
+numero2 = 21
+numero3 = 200
+
+if numero1 > numero2 and numero3 > numero1:
+
+    print("As duas condições são verdadeiras")
+
+"""
+As duas condições são verdadeiras
+"""
+
+ #Classificação de notas de aproveitamento
+    
+    nota = int(input("Olá, insira a nota de aproveitamento deste aluno: "))
+    
+    
+    
+    if nota >= 90 and nota <= 100:
+    
+        print("Parabéns! Seu aproveitamento foi excelente!")
+    
+    elif nota >= 70 and nota <= 89:
+        
+        print("Parabéns! Seu aproveitamento foi bom!")
+    
+    elif nota >= 50 and nota <= 69:
+        
+        print("Parabéns! Seu aproveitamento foi satisfatório!")
+    
+    else:
+        
+        print("Seu aproveitamento foi insuficiente!")
+
+
+"""
+Olá, insira a nota de aproveitamento deste aluno:  80
+Parabéns! Seu aproveitamento foi bom!
+"""
+
+compra = float(input("Insira o valor de sua compra: R$"))
+
+if compra >= 1000 :
+
+#desconto = 0.20 * compra
+
+#print("voce recebeu um desconto de 20%!")
+
+    print(f"O seu desconto será de R$ {compra * 0.2:.2f} reais")
+    print(f"\nO preço total é de R$ {compra-compra * 0.2:.2f} reais")
+
+elif compra >= 500 and compra <= 999:
+
+#desconto = 0.10 * compra
+    
+    print(f"O seu desconto será de R$ {compra * 0.1:.2f} reais")
+    print(f"\nO preço total é de R$ {compra-compra * 0.1:.2f} reais")
+
+else:
+
+#desconto = 0 * compra
+    
+    print("Não há desconto disponível no valor do seu produto")
+    print(f"\nO preço total é de R$ {compra:.2f} reais")
+
+"""
+Insira o valor do produto adquirido: R$ 6000
+O seu desconto será de R$ 1200.00 reais
+
+O preço total é de R$ 4800.00 reais
+"""
+
+#if...or
+
+numero1 = 19
+numero2 = 150
+numero3 = 18
+
+if numero1 > numero2 or numero1 > numero3:
+
+    print(f"O {numero1} é maior que {numero2} ou {numero1} é maior que o {numero3}!")
+
+
+""
+O 19 é maior que 150 ou 19 é maior que o 18!
+"""
+
+convite_vip = input("Voce possui convite VIP? (sim/não):")
+na_lista = input("Você se encontra na lista de convidados? (sim/não):")
+membro_clube = input("Qual é o seu nome? (sim/não):")
+
+if convite_vip == "sim" or na_lista == "sim" or membro_clube == "sim":
+
+    print("Bem-vindo(a) ao evento! Sr(a)", membro_clube,"!")
+
+else:
+
+    print("Desculpe, você não pode entrar no evento!")
+
+
+"""
+Voce possui convite VIP? (sim/não): sim
+Você se encontra na lista de convidados? (sim/não): sim
+Qual é o seu nome? (sim/não): Almeida
+Bem-vindo(a) ao evento! Sr(a) Almeida !
+"""
+
+numero = int(input("Digite um numero e saiba se ele é par ou impar: "))
+
+#number = "par" if numero % 2 == 0 else "impar"
+#print(number)
+
+if numero % 2 == 0:
+             print(f"Sim o seu número é par {numero} é divisível por 2")
+             
+else:
+
+             print("Este número é impar, no caso não pode ser dividido por 2")
+
+
+"""
+Digite um numero e saiba se ele é par ou impar:  29
+Este número é impar, no caso não pode ser dividido por 2
+"""
+
+#Estrutura condicional ternária
+
+#age - idade
+
+age = 17
+status = "adulto" if age >= 18 else "menor de idade"
+print(status)
+
+"""
+menor de idade
+"""
+
+score = int(input("Digite o seu score para saber sua categoria: "))
+
+categoria = "baixo" if score < 50 else "médio" if score < 80 else "alto"
+
+print(categoria)
+
+"""
+Digite o seu score para saber sua categoria:  50
+médio
+"""
+
+idade = int(input("Digite a idade para sabermos a categoria da pessoa: "))
+
+criança = (0 <= idade <= 12)
+adolescente = (13 <= idade <= 17)
+adulto = (18 <= idade <= 59)
+idoso = (idade >= 60)
+
+if criança:
+    print(f"Se trata de uma criança de {idade} anos")
+elif adolescente:
+    print(f"Se trata de um adolescente de {idade} anos")
+elif adulto:
+    print(f"Se trata de um adulto de {idade} anos")
+else:
+    print(f"Se trata de um idoso de {idade} anos")
+
+
+"""
+Digite a idade para sabermos a categoria da pessoa:  50
+Se trata de um adulto de 50 anos
+"""
+
+
+
+
+#Este sinal serva para comentar um codigo para que o usuário saiba o que esse código faz
+
+"""
+Usando 3 aspas podemos
+comentar varias linhas
+assim quando o codigo for executado o script pula varias linhas
+"""
+
+inteiro = 42
+print("Inteiro:", inteiro) #numeros inteiros
+
+flutuante = 42.0
+print("Flutuante:", flutuante) #numeros com pontos e casas decimais
+
+complexo = 3 + 4j
+print("Complexo:", complexo)
+
+texto = "Olá mundo!"
+print(texto) #textos
+
+lista = [1, 2, 3]
+print("Lista:", lista) #coleção mutavel/alteravel
+
+tupla = (1, 2, 3, 4, 5) #coleção imutavel/inalteravel
+print("Tupla:", tupla)
+
+conjunto = {1, 2, 3} #set
+print("Conjunto:", conjunto) #valore #coleção de itens unicos/nao se repetem
+
+dicionario = {"chave": "valor"}
+print("Dicionario:", dicionario) #dict coleção não ordenada (estado)
+
+booleano = True 
+print("Booleano:", booleano) #verdadeiro ou falso
+
+nenhum = None
+print("NoneType (None):", nenhum) #ausencia de valor
+
+"""
+Inteiro: 42
+Flutuante: 42.0
+Complexo: (3+4j)
+Olá mundo!
+Lista: [1, 2, 3]
+Tupla: (1, 2, 3, 4, 5)
+Conjunto: {1, 2, 3}
+Dicionario: {'chave': 'valor'}
+Booleano: True
+NoneType (None): None
+"""
+
+#Variaveis
+
+idade = 30
+nome = "Almeida"
+
+print("Nome:", nome)
+print("Idade:", idade)
+print("Nome:", nome, ", Idade:", idade)
+
+"""
+Nome: Almeida
+Idade: 30
+Nome: Almeida , Idade: 30
+"""
+
+Nome = "Almeida"
+Idade = 30
+Peso = 81.2
+print(type(Nome))
+print(type(Idade))
+print(type(Peso))
+
+# ou
+
+Nome = str("Almeida")
+numero = 31
+
+print(Nome)
+print(type(numero))
+
+"""
+<class 'str'>
+<class 'int'>
+<class 'float'>
+Almeida
+<class 'int'>
+"""
+
+var1, var2, var3, var4 = "Texto 1", "Texto 2", "Texto 3", "Texto 4"
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+
+"""
+Texto 1
+Texto 2
+Texto 3
+Texto 4
+"""
+
+#Atribuindo o mesmo valor em varias variáveis em uma unica linha
+
+var1 = var2 = var3 = var4 = "Almeida"
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+
+#ou
+
+#descompactar variaveis
+
+exemplo = "Texto 1", "Texto 2", "Texto 3", "Texto 4"
+var1, var2, var3, var4 = exemplo
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+
+"""
+Almeida
+Almeida
+Almeida
+Almeida
+Texto 1
+Texto 2
+Texto 3
+Texto 4
+"""
+
+nome = 10
+print("O nome dele é:", nome)
+
+"""
+O nome dele é: 10
+"""
+
+idade = 25
+nome = "João"
+saldo = 100.50
+soma = idade + saldo
+print(soma)
+
+"""
+125.5
+"""
+
+nota1 = 7.5
+nota2 = 8.3
+nota3 = 6.9
+media = (nota1 + nota2 + nota3) / 3
+print(format(media, ".2f")) #distinguir casas decimais
+
+"""
+7.57
+"""
+
+# 1. Crie uma variável chamada nome e atribua o seu nome a ela como um valor.
+nome = "Almeida"
+
+# 2. Crie duas variáveis chamadas idade e ano_atual. 
+idade, ano = 30, 1994
+
+# 3. Calcule o ano em que você nasceu.
+print(2024-30)
+
+# 4. Incremente a variável idade em 1.
+print(idade)
+
+# 5. Imprima as mensagens.
+print("Olá meu nome é", nome,"nasciddo em", ano,"e possuo", idade, "de idade.")
+
+"""
+1994
+30
+Olá meu nome é Almeida nasciddo em 1994 e possuo 30 de idade.
+"""
+
+nome = input ("Digite seu nome: ")
+#\n quebra de linha
+print("\nO seu nome é: " + nome)
+
+"""
+Digite seu nome: 
+ Almeida
+
+O seu nome é: Almeida
+"""
+
+nome = input ("Digite seu nome: \n")
+nota1 = float(input("Digite a nota 1: "))
+nota1 = float(input("Digite a nota 2: "))
+
+media = (nota1 + nota2) / 2
+print("\nAluno:", nome, "ficou com a méida", media)
+
+"""
+Digite seu nome: 
+ Almeida
+Digite a nota 1:  6
+Digite a nota 2:  8.8
+
+Aluno: Almeida ficou com a méida 8.55
+"""
+
+#Tabuada personalizada em input
+
+digitado = int(input ("A tabuada de qual número você deseja ver? "))
+
+print(digitado, "* 1 =", digitado * 1 )
+print(digitado, "* 2 =", digitado * 2 )
+print(digitado, "* 3 =", digitado * 3 )
+print(digitado, "* 4 =", digitado * 4 )
+print(digitado, "* 5 =", digitado * 5 )
+print(digitado, "* 6 =", digitado * 6 )
+print(digitado, "* 7 =", digitado * 7 )
+print(digitado, "* 8 =", digitado * 8 )
+print(digitado, "* 9 =", digitado * 9 )
+print(digitado, "* 10 =", digitado * 10 )
+
+"""
+A tabuada de qual número você deseja ver?  7
+7 * 1 = 7
+7 * 2 = 14
+7 * 3 = 21
+7 * 4 = 28
+7 * 5 = 35
+7 * 6 = 42
+7 * 7 = 49
+7 * 8 = 56
+7 * 9 = 63
+7 * 10 = 70
+"""
+
+idade = input("Qual é a sua idade? ")
+ano = 2024
+nascimento = (int(input("Digite o ano de nascimento: ")))
+
+print("Sua idade é", idade, "e você nasceu em", nascimento)
+
+"""
+Qual é a sua idade?  30
+Digite o ano de nascimento:  1994
+Sua idade é 30 e você nasceu em 1994
+"""
+
+# ou
+
+ano_atual = 2024
+ano_nascimento = int(input("Digite seu ano de nascimento: "))
+idade = ano_atual - ano_nascimento
+print("sua idade é: ", idade)
+
+"""
+Digite seu ano de nascimento:  1994
+sua idade é:  30
+"""
+
+***
+pip install random
+Note: you may need to restart the kernel to use updated packages.
+***
+
+import random #numeros aleatórios
+
+print(random.randrange(1, 60)) #numero inteiro
+print(random.random()) #numero quebrado enre 0 e 1
+print(random.randint(10, 20))
+
+frutas = ["maçã", "banana", "cereja"]
+print(random.choice(frutas)) #escolhe uma fruta aleatoriamente
+
+#Embaralhar uma lista aleatóriamente
+numeros = [1, 2, 3, 4, ]
+random.shuffle(numeros)
+print(numeros) #lista de numeros embaralhados
+
+print(random.uniform(5.5, 9.5))
+
+"""
+25
+0.46827712734977
+10
+maçã
+[2, 4, 1, 3]
+8.261576362627952
+"""
+
+# M E T O D O S P A R A S T R I N G 
+
+posicaoletra = "Python"
+print(posicaoletra[0])
+print(posicaoletra[1])
+print(posicaoletra[2])
+print(posicaoletra[3])
+print(posicaoletra[4])
+print(posicaoletra[5])
+
+"""
+P
+y
+t
+h
+o
+n
+"""
+
+frase = "Olá, mundo!"
+parte = frase [4:8]
+print(parte)
+
+primeiros = frase [:5]
+print(primeiros)
+
+ultimos = frase [-6:]
+print(ultimos)
+
+"""
+mun
+Olá, 
+mundo!
+"""
+
+frase = "O módulo de python é muito legal"
+print("python" in frase)
+
+"""
+True
+"""
+
+frase = "O módulo de python é muito legal"
+if "python" in frase:
+    print("Sim, a palavra python está presenta na frase")
+else:
+    print("Não, a palavra python não está presenta na frase")
+
+"""
+Sim, a palavra python está presenta na frase
+"""
+
+frase = "     O módulo de python é muito legal     "
+print(frase.strip()) # strip encurta/otimiza o espaço do texto ou remover os espaços da frase
+
+"""
+O módulo de python é muito legal
+"""
+
+frase = "Olá, como vai você?"
+palavras = frase.split() # dividindo as palavras em frase com separador
+print(palavras)
+
+"""
+['Olá,', 'como', 'vai', 'você?']
+"""
+
+palavras = ['Olá,', 'como', 'vai', 'você?']
+frase = ' '.join(palavras) #conversão de frase em split
+print(frase)
+
+"""
+Olá, como vai você?
+"""
+
+texto = "******Olá******"
+texto_strip = texto.strip('*') #strip remove argumentos/caracteres que não são texto
+print(texto_strip)
+
+#ou
+
+texto = "     Olá     "
+texto_strip = texto.strip()
+print(texto_strip)
+
+"""
+Olá
+Olá
+"""
+
+nome = "Almeida"
+idade = 30
+altura = 1.78
+
+mensagem = f"Olá! meu nome é {nome}. Tenho {idade} anos e minha altura é {altura:.2f} metros."
+print(mensagem)
+
+"""
+Olá! meu nome é Almeida. Tenho 30 anos e minha altura é 1.78 metros.
+"""
+
+texto = "Olá, mundo!"
+
+texto_upper = texto.upper() #upper converte tudo para maiúsculo
+print(texto_upper)
+
+texto_lower = texto.lower() #lower converte tudo para minúsculo
+print(texto_lower)
+
+texto_capitalize = texto.capitalize() #Apenas a primeira letra em maiusculo
+print(texto_capitalize)
+
+ocorrencias = texto.count("o") #contabiliza a quantidade de letra mencionada no parenteses
+print(ocorrencias)
+
+texto_substituido = texto.replace("mundo", "amigo") # substitui as palavras citadas
+print(texto_substituido)
+
+"""
+OLÁ, MUNDO!
+olá, mundo!
+Olá, mundo!
+1
+Olá, amigo!
+"""
+
+nome = "Maria"
+sobrenome = "Silva"
+idade = 30
+nome_completo = f"{nome} {sobrenome}" #ou nome + " " + sobrenome 
+print(nome_completo)
+
+mensagem = f"Olá {nome_completo}, você tem {idade} anos de idade certo? Seja bem vinda!" #Ou "Olá {} {}, você tem {} anos de idade certo? Seja bem vinda!".format(nome_completo, idade)
+print(mensagem)
+
+"""
+Maria Silva
+Olá Maria Silva, você tem 30 anos de idade certo? Seja bem vinda!
+"""
+
+frase = "Python é uma linguagem de programação poderosa e versátil."
+frase = frase.count("") #contagem dos caracteres
+print(frase)
+palavra = "Python"
+
+"""
+59
+"""
+
+frase = "Python é uma linguagem de programação poderosa e versátil."
+frase_maiuscula = frase.upper()
+print(frase_maiuscula)
+
+"""
+PYTHON É UMA LINGUAGEM DE PROGRAMAÇÃO PODEROSA E VERSÁTIL.
+"""
+
+frase = "Python é uma linguagem de programação poderosa e versátil."
+frase_substituida = frase.replace("poderosa", "incrível")
+print(frase_substituida)
+
+"""
+Python é uma linguagem de programação incrível e versátil.
+"""
+
+frase = "Python é uma linguagem de programação poderosa e versátil."
+tamanho_frase = len(frase) # contagem real dos caracteres
+print("tamanho_frase:", tamanho_frase)
+
+"""
+tamanho_frase: 58
+"""
